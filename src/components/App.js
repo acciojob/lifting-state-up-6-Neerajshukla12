@@ -11,7 +11,7 @@ const App = () => {
     { id: 3, text: "Deploy the React app", completed: false }
   ]);
 
-const handleSubmit=(id)=>{
+const handleComplete=(id)=>{
   setTodos(
       todos.map((todo) =>
         todo.id === id ? { ...todo, completed: true } : todo
@@ -23,7 +23,7 @@ const handleSubmit=(id)=>{
     <div>
         {/* Do not remove the main div */}
         <h1>Parent Component </h1>
-        <Todo todos={todos} handleSubmit={handleSubmit}/>
+        <Todo todos={todos} handleComplete={handleComplete}/>
     </div>
   )
 }
