@@ -12,7 +12,9 @@ const Todo = ({todos,handleComplete}) => {
               <button onClick={() => handleComplete(todo.id)}>
                 Complete
               </button>
+
             )}
+            {todo.completed && <span> ✅</span>}
           </li>
         ))}
       </ul>
