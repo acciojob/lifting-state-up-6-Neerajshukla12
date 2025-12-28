@@ -11,13 +11,13 @@ const App = () => {
     { id: 3, text: "Deploy the React app", completed: false }
   ]);
 
-const handleComplete=(id)=>{
-  setTodos(
-      todos.map((todo) =>
+const handleComplete = (id) => {
+    setTodos((prevTodos) =>
+      prevTodos.map((todo) =>
         todo.id === id ? { ...todo, completed: true } : todo
       )
     );
-}
+  };
 
   return (
     <div>
