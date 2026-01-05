@@ -14,7 +14,7 @@ const Todo = ({todos,handleComplete}) => {
               </button>
 
             )}
-            {todo.completed &&  <button>completed</button>}
+            {todo.completed && <span> ✅</span>}
           </li>
         ))}
       </ul>
