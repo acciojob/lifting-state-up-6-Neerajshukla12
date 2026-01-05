@@ -10,7 +10,7 @@ const Todo = ({todos,handleComplete}) => {
             {todo.text}
             {!todo.completed && (
               <button onClick={() => handleComplete(todo.id)}>
-                Complete
+                complete
               </button>
 
             )}
