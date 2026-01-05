@@ -23,7 +23,7 @@ const handleComplete = (id) => {
     <div>
         {/* Do not remove the main div */}
         <h1>Parent Component </h1>
-        <Todo todos={todos} handleComplete={handleComplete}/>
+        <TodoList todos={todos} handleComplete={handleComplete}/>
     </div>
   )
 }
