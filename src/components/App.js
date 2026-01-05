@@ -1,7 +1,7 @@
 
 import React,{useState} from "react";
 import './../styles/App.css';
-import Todo from "./Todo";
+import Todo from "./TodoList";
 
 const App = () => {
 

@@ -11,11 +11,11 @@ const Todo = ({ todos, handleComplete }) => {
 
             {!todo.completed && (
               <button onClick={() => handleComplete(todo.id)}>
-                Complete
+                complete
               </button>
             )}
 
-            {todo.completed && <button>completed</button>}
+            {/* {todo.completed && <button>completed</button>} */}
           </li>
         ))}
       </ul>
