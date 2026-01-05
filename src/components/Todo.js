@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-const Todo = ({todos,handleComplete}) => {
+const Todo = ({ todos, handleComplete }) => {
   return (
     <div>
       <h2>Child Component</h2>
@@ -8,18 +8,19 @@ const Todo = ({todos,handleComplete}) => {
         {todos.map((todo) => (
           <li key={todo.id}>
             {todo.text}
+
             {!todo.completed && (
               <button onClick={() => handleComplete(todo.id)}>
-                complete
+                Complete
               </button>
-
             )}
+
             {todo.completed && <span>Complete</span>}
           </li>
         ))}
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Todo
+export default Todo;
