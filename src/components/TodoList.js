@@ -27,7 +27,7 @@ const TodoList = ({ todos, handleComplete }) => {
 
         {todos.map(todo => (
           <li key={todo.id}>
-            {todo.text}  
+            {todo.text}&nbsp;&nbsp;
             {!todo.isCompletd? (
               <button onClick={() => handleComplete(todo.id)}>
                 Complete
