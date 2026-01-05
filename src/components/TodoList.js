@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Todo = ({ todos, handleComplete }) => {
+const TodoList = ({ todos, handleComplete }) => {
   return (
     <div>
       <h2>Child Component</h2>
@@ -11,11 +11,11 @@ const Todo = ({ todos, handleComplete }) => {
 
             {!todo.completed && (
               <button onClick={() => handleComplete(todo.id)}>
-                complete
+                Complete
               </button>
             )}
 
-            {/* {todo.completed && <button>completed</button>} */}
+            {todo.completed && <span>Complete</span>}
           </li>
         ))}
       </ul>
@@ -23,4 +23,4 @@ const Todo = ({ todos, handleComplete }) => {
   );
 };
 
-export default Todo;
+export default TodoList;
