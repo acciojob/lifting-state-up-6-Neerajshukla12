@@ -28,13 +28,9 @@ const TodoList = ({ todos, handleComplete }) => {
         {todos.map(todo => (
           <li key={todo.id}>
             {todo.text}&nbsp;&nbsp;
-            {!todo.isCompletd? (
-              <button onClick={() => handleComplete(todo.id)}>
-                Complete
-              </button>
-            ) : (
-              <span>Complete</span>
-            )}
+            {!todo.isCompleted &&(
+              <button onClick={() => handleComplete(todo.id)}>Complete</button>)
+            }
           </li>
         ))}
       </ul>
